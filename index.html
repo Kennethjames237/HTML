@@ -1,59 +1,48 @@
 <!DOCTYPE html>
-<!-- This is simply a test and a study of HTML PLEASE -->
-<html>
-    <head>
-        <title>This is the title of the document</title>
-        <link rel="icon" href="image/img1.png" type="image/png" sizes="16*16">
-        <style>
-            #para{
-                color: aliceblue;
-            }
-            body{
-                background-color  : rgba(112, 185, 214, 0.795);
-            }
-   
-             div {
-                 width: 30%;
-                 float: left;
-             }
-             .begin{
-                color: red;
-             }
-        </style>
-    </head>
-        <body>
-            <h1 style="color:red">Questo è un titolo di livello 1</h1>
-            <p>Questo testo può essere un introduzione a la pagina. <br/>Se la pagina è lunga 
-                a il contenuto viene diviso con dei sotto titoli
-            </p>
-            <hr>
-            <h1 class="begin">Questo è un sottotitolo</h1>
-            <h1>un altro sottotitolo</h1>
-            <P>Altro testo..</P>
-            <p>new text</p>
-            <a target =_blank ; style = "color: black ;"href = "https://github.com/Kennethjames237">my git repository </a><br/>
-            <img src="image/img2.png" alt="my profile pic" width="100" height="100" >
-            <br/>
-            <p id="para">I tested here the attribute_id</p>
-            <br/>
-            <div style="background-color: aqua;">
-                <h2>This is the first div</h2>
-                <p>My name is nna minkousse kenneth james </p>
-            </div>
-
-            <div style="background-color:rgb(68, 68, 104);">
-                <h2>This is the second div</h2>
-                <P>I am a year 3 computer science student</P>
-            </div>
-
-            <div style = "background-color: brown;">
-                <h2>This is the third div</h2>
-                <P>I am learning HTML</P>
-            </div>
-            <br/>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Barber Shop</title>
+    <style>
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
             
-           
-
-        </body>
-        </body>
+        }
+        .navbar a {
+            float : left;
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color : black;
+        }
+        .brand img {
+            height: 40px;
+            vertical-align: middle;
+        }
+        .brand {
+            float: left;
+            padding: 7px 20px;/* Adjust vertical padding so logo alings with links */
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href=index.html class="brand">
+        <img src="image/barber-shop.png" type="image/png" alt="logo"/>
+      </a>
+        <a href="#home">Home</a>
+        <a href="#service">Services</a>
+        <a href="#About">About Us</a>
+        <a href="#Book">Book Now</a>
+        <a href="#contact">Contact</a>
+    </nav>
+  </body>
 </html>
