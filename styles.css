@@ -1,0 +1,58 @@
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(image/img3.png);
+        background-size: cover;
+        animation: backgroundFlow 45s ease-in-out infinite;
+    }
+    
+    @keyframes backgroundFlow {
+        0% {
+            background-position: center center;
+        }
+        50% {
+            background-position: center top;
+        }
+        100% {
+            background-position: center center;
+        }
+    }
+    
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 0 0 20px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 1em;
+        backdrop-filter: blur(8px);
+        z-index: 1000;
+    }
+    
+    .navbar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .brand img {
+        height: 35px;
+        vertical-align: middle;
+    }
+    
+    .brand {
+        float: left;
+        padding: 7px 20px;
+        /* Adjust vertical padding so logo alings with links */
+        display: block;
+    }
