@@ -1,70 +1,28 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(image/img3.png);
-    background-size: cover;
-    animation: backgroundFlow 45s ease-in-out infinite;
+a:link{
+color: red;
 }
-
-@keyframes backgroundFlow {
-    0% {
-        background-position: center center;
-    }
-    50% {
-        background-position: center top;
-    }
-    100% {
-        background-position: center center;
-    }
+a:hover{
+    color: blue;
+    background-color: rgb(127, 150, 26);
 }
-
-.navbar {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 0 0 20px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 1em;
-    backdrop-filter: blur(8px);
-    z-index: 1000;
+a:visited{
+    border-color: brown;
 }
-
-.navbar a {
+.header{
+    background-color: blue;
+}
+table{
+    background-color: skyblue;
+    border: double;
+}
+body{
+    background-image: url(/image/barber-shop.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50px;
+    background-color: darkcyan;
+}
+img{
+    width: 70px;
     float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px 60px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.navbar a:hover {
-    background-color: none;
-    color: black;
-    font-size: medium;
-    tab-size: 100px;
-    block-size: auto;
-}
-
-.brand img {
-    height: 35px;
-    vertical-align: middle;
-}
-
-.brand {
-    float: left;
-    padding: 7px 20px;
-    /* Adjust vertical padding so logo alings with links */
-    display: block;
-}
-
-
-/* ensure content is visible below the fixed navbar */
-
-.page-content {
-    padding-top: 90px;
-    /* adjust this value to match your navbar height */
-    color: white;
 }
